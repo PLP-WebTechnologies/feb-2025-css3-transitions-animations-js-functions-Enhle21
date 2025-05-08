@@ -1,0 +1,82 @@
+/* Logo styles */
+header img {
+    height: 80px;
+    margin-right: 15px;
+  }
+  
+  /* Updated header layout for logo + text */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    flex: 1;
+    font-size: 28px;
+    margin: 0;
+  }
+  
+  #themeSelect {
+    padding: 6px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+/* Base styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #d63384;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-colo 0.3s ease;
+}
+
+button:hover {
+    background-color: #c2186c;
+}
+
+button.animate {
+    animation: pulse 0.6s ease;
+}
+
+/* Themes */
+body.day{
+    background-color: #fff0f5;
+    color: #333;
+}
+
+body.night {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+/* Button animation */
+@keyframes pulse {
+    0% {transform: scale(1); }
+    50% {transform: scale(1.1); }
+    100% {transform: scale(1); }
+}
